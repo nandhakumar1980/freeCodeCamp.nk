@@ -8,9 +8,32 @@ dashedName: understanding-boolean-values
 
 # --description--
 
-Another data type is the <dfn>Boolean</dfn>. Booleans may only be one of two values: `true` or `false`. They are basically little on-off switches, where `true` is on and `false` is off. These two states are mutually exclusive.
+Another data type is the <dfn>Boolean</dfn>. Booleans may only be one of two values: `true` or `false`.
+
+**Real-world analogy:** Think of a Boolean like a **light switch** — it's either ON (`true`) or OFF (`false`). There's no in-between.
+
+These two states are mutually exclusive, meaning a value can't be both `true` and `false` at the same time.
+
+**Where you'll use Booleans:**
+
+Booleans show up constantly in real applications. For example:
+- Is the user logged in? → `true` or `false`
+- Has the form been submitted? → `true` or `false`
+- Is the shopping cart empty? → `true` or `false`
+
+```js
+let isLoggedIn = true;
+let isCartEmpty = false;
+```
+
+**Common mistake to avoid:**
 
 **Note:** Boolean values are never written with quotes. The strings `"true"` and `"false"` are not Boolean and have no special meaning in JavaScript.
+
+```js
+let correct = true;      // ✅ This is a Boolean
+let wrong = "true";      // ❌ This is just a string — not a Boolean!
+```
 
 # --instructions--
 
